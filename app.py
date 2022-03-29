@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-app = Flask(__name__, static_folder='./ui/build', static_url_path='/') # where static files are stored
+app = Flask(__name__, static_folder='./ui_2/build', static_url_path='/') # where static files are stored
 # static_url_path is seen in front end, static_folder seen in backend 
 
 if __name__ == 'main':
@@ -8,10 +8,11 @@ if __name__ == 'main':
 # function to take input form frontend and test against "Sofie"
 @app.route("/input/<fname>", methods=["GET"])
 def input(fname: str):
-    if fname == "sofie":
-        lname = "kardonik"
+    if fname == "Sofie":
+        lname = "Kardonik"
     else:
         lname = "User Not Found"
+    print(lname)
     return jsonify(output=lname)
 
 @app.route('/')
