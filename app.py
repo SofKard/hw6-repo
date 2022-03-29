@@ -2,6 +2,10 @@ from flask import Flask, jsonify
 app = Flask(__name__, static_folder='./ui_2/build', static_url_path='/') # where static files are stored
 # static_url_path is seen in front end, static_folder seen in backend 
 
+#comment out for deployment
+#from flask_cors import CORS
+#CORS(app)
+
 if __name__ == 'main':
     app.run()
 
