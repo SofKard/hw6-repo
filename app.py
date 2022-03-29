@@ -9,10 +9,10 @@ if __name__ == 'main':
 @app.route("/input/<fname>", methods=["GET"])
 def input(fname: str):
     if fname == "Sofie":
-        output = "Kardonik"
+        lname = "Kardonik"
     else:
-        output = "User Not Found"
-    return jsonify(str=output)
+        lname = "User Not Found"
+    return jsonify(output=lname)
 
 @app.route('/')
 def index():
