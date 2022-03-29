@@ -69,7 +69,6 @@ systemd-python==234
 termcolor==1.1.0
 Twisted==17.9.0
 typing-extensions==4.1.1
-unattended-upgrades==0.1
 urllib3==1.22
 virtualenv==20.0.20
 Werkzeug==2.0.3
