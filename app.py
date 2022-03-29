@@ -8,8 +8,8 @@ if __name__ == 'main':
 # function to take input form frontend and test against "Sofie"
 @app.route("/input/<fname>", methods=["GET"])
 def input(fname: str):
-    if fname == "Sofie":
-        lname = "Kardonik"
+    if fname == "sofie":
+        lname = "kardonik"
     else:
         lname = "User Not Found"
     return jsonify(output=lname)

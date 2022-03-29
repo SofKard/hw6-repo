@@ -13,6 +13,7 @@ function TextName () {
                 <TextField value={first_name}
                   onChange={(e) => {
                     set_first_name(e.target.value);
+                    //comment out for deployment
                     //fetch("http://127.0.0.1:5000/input/" + e.target.value)
                     fetch("/input/" + e.target.value)             // connected to server  
                     .then(response => response.json())            // setting to json format
