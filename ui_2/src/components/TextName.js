@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField"
 
 function TextName () {
     const [first_name, set_first_name] = useState("")
-    const [last_name, set_last_name] = useState("First Name Not Found")
+    const [last_name, set_last_name] = useState("User Not Found")
   
     return (
       <div>

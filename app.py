@@ -16,7 +16,7 @@ def input(fname: str):
     if fname == "Sofie":
         output = "Kardonik"
     else:
-        output = "First Name Not Found"
+        output = "User Not Found"
     print("out=", output)
     return jsonify(str=output)
 
