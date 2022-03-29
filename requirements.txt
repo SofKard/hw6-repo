@@ -14,7 +14,6 @@ configobj==5.0.6
 constantly==15.1.0
 cryptography==2.1.4
 cycler==0.10.0
-dataclasses==0.8
 distlib==0.3.0
 dnspython==2.2.0
 filelock==3.0.12
